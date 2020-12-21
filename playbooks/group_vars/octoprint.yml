@@ -1,0 +1,65 @@
+---
+octoprint_yaml_files:
+  - path: config.yaml
+    content:
+      accessControl:
+          salt: oI7jJafxDju4GRUA10wFcyzzXrSYRRyI
+      api:
+          key: 0EC21D55714B486094D0F4B611A41CFA
+      plugins:
+          announcements:
+              _config_version: 1
+              channels:
+                  _blog:
+                      read_until: 1608041700
+                  _important:
+                      read_until: 1521111600
+                  _octopi:
+                      read_until: 1604571600
+                  _plugins:
+                      read_until: 1608098400
+                  _releases:
+                      read_until: 1607604000
+          discovery:
+              upnpUuid: 648c3640-e258-499f-869d-26042607f2a3
+          errortracking:
+              unique_id: 9d8adfec-1b1d-4061-b6c0-433bd25c5986
+          gcodeviewer:
+              _config_version: 1
+          softwareupdate:
+              _config_version: 9
+          tracking:
+              enabled: false
+              unique_id: 0e4ce14a-cc01-46ea-90d6-7359667fb408
+          virtual_printer:
+              _config_version: 1
+      printerProfiles:
+          default: _default
+      server:
+          firstRun: false
+          onlineCheck:
+              enabled: false
+          pluginBlacklist:
+              enabled: true
+          secretKey: OIXyuBjs136ETuRDpBGpYOtZXp2eNeD4
+          seenWizards:
+              backup: null
+              corewizard: 4
+              tracking: null
+      temperature:
+          profiles:
+          -   bed: 100
+              chamber: null
+              extruder: 210
+              name: ABS
+          -   bed: 60
+              chamber: null
+              extruder: 180
+              name: PLA
+  - path: data/appkeys/keys.yaml
+    mode: "0640"
+    content:
+      - api_key: B9B058659A154060833F317BD947A030
+        app_id: cura
+  - path: users.yaml
+    content: "{{ project_users }}"
